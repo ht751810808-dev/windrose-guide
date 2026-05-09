@@ -151,6 +151,7 @@ export default function Footer() {
               { label: 'Bojack Test', href: 'https://www.bojacktest.com/' },
               { label: "Women's March Madness", href: 'https://www.womensmarchmadness.wiki/' },
               { label: 'Mem Palace', href: 'https://www.mempalace.tech/' },
+              { label: 'Tomodachi Life', href: 'https://www.tomodachi-life.org/' },
             ].map((link) => (
               <a
                 key={link.href}
