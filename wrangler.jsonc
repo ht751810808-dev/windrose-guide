@@ -1,0 +1,24 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "windrose-guide",
+  "main": ".open-next/worker.js",
+  "compatibility_date": "2026-05-08",
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "kv_namespaces": [
+    {
+      "binding": "COMMENTS",
+      "id": "68e38bb0745244c0a72344dfb605dfaf"
+    }
+  ],
+  "observability": {
+    "enabled": true
+  },
+  "routes": [
+    { "pattern": "windroseguide.com/*", "zone_name": "windroseguide.com" },
+    { "pattern": "www.windroseguide.com/*", "zone_name": "windroseguide.com" }
+  ]
+}
