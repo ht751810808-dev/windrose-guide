@@ -7,19 +7,19 @@ import CommentBox from '@/components/CommentBox';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Windrose Gunpowder – Crafting Guide, Ingredients & Farming Tips 2026',
-  description: 'Complete Windrose gunpowder guide — how to craft gunpowder in Windrose, all ingredients, farming locations, best gunpowder recipes, and ammo tips.',
-  keywords: ['windrose gunpowder', 'windrose', 'windrose crafting', 'windrose ammo', 'windrose gunpowder guide', 'windrose game'],
+  title: 'Windrose Gunpowder Guide – How to Get & Craft Gunpowder 2026',
+  description: 'How to get gunpowder in Windrose: early-game looting spots, mid-game Millstones crafting recipe (Ash + Sulfur), farming locations, and tips to keep your ammo supply topped up.',
+  keywords: ['windrose gunpowder', 'windrose', 'windrose crafting', 'windrose ammo', 'windrose gunpowder guide', 'windrose millstones'],
   alternates: { canonical: 'https://www.windroseguide.com/windrose-gunpowder' },
 };
 
 const related = [
   { href: '/windrose-weapons', label: 'Windrose Weapons', desc: 'Weapons that use gunpowder' },
-  { href: '/windrose-builds', label: 'Windrose Builds', desc: 'Gunpowder Bomber build guide' },
+  { href: '/windrose-builds', label: 'Windrose Builds', desc: 'Gunpowder-heavy build guide' },
   { href: '/windrose-ships', label: 'Windrose Ships', desc: 'Ship cannon ammunition' },
-  { href: '/windrose-crew', label: 'Windrose Crew', desc: 'Supply crew for gunpowder' },
+  { href: '/windrose-crew', label: 'Windrose Crew', desc: 'Assign workers to Millstones' },
   { href: '/windrose-gameplay', label: 'Windrose Gameplay', desc: 'Core crafting mechanics' },
-  { href: '/windrose-wiki', label: 'Windrose Wiki', desc: 'Full gunpowder mechanics' },
+  { href: '/windrose-map', label: 'Windrose Map', desc: 'Foothills region — sulfur location' },
 ];
 
 export default function WindroseGunpowderPage() {
@@ -35,7 +35,7 @@ export default function WindroseGunpowderPage() {
             <div className="pill pill-gold" style={{ marginBottom: '1rem' }}>Crafting Guide</div>
             <h1 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 900, marginBottom: '1rem', lineHeight: 1.1 }}>Windrose Gunpowder</h1>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '1.05rem', lineHeight: 1.8, maxWidth: '680px' }}>
-              The complete <strong style={{ color: 'var(--color-text)' }}>Windrose gunpowder</strong> guide — crafting recipes, ingredient farming, storage tips, and how to maximize your gunpowder supply for Windrose cannon and firearm combat.
+              The complete <strong style={{ color: 'var(--color-text)' }}>Windrose gunpowder</strong> guide — how to find it early, how to craft it at the Millstones, what ingredients you need, and how to maximize your ammo supply for firearms and ship cannons.
             </p>
           </div>
         </section>
@@ -43,85 +43,106 @@ export default function WindroseGunpowderPage() {
 
           <h2>Windrose Gunpowder Overview</h2>
           <p>
-            <strong>Windrose gunpowder</strong> is the most critical crafting resource in the Windrose game. Without sufficient Windrose gunpowder, your firearms run dry and your cannons fall silent — leaving you defenseless in naval combat and unable to use the most powerful Windrose weapons in dungeons. Mastering Windrose gunpowder production and management is essential for all Windrose playstyles, but especially for the <Link href="/windrose-builds">Windrose Gunpowder Bomber build</Link>.
+            <strong>Windrose gunpowder</strong> is the most critical consumable resource in the game. Without a steady supply, your firearms go silent and your ship&apos;s cannons run dry — leaving you unable to compete in naval combat or clear higher-tier POIs. The good news: <strong>Windrose gunpowder</strong> is obtainable through two very different routes depending on your progression stage.
+          </p>
+          <p>
+            In the <strong>first several hours</strong> of Windrose, crafting gunpowder is not yet practical — it requires unlocking the Millstones workstation, which is only available in the Foothills region. During this early phase, looting gunpowder directly from enemies and chests is far more efficient. Once you reach the Foothills and set up Millstones production, crafting becomes the go-to method for the rest of the game.
           </p>
 
-          <h2>Windrose Gunpowder Crafting Recipe</h2>
-          <h3>Basic Windrose Gunpowder</h3>
+          <h2>Early Game: How to Get Windrose Gunpowder by Looting</h2>
+          <h3>Kill Enemy Sailors & Musketeers</h3>
           <p>
-            The <strong>basic Windrose gunpowder</strong> recipe requires three ingredients gathered from the Windrose world:
+            Human pirate enemies — especially <strong>Sailors</strong> and higher-level <strong>Musketeers</strong> — frequently drop <strong>Windrose gunpowder</strong> when killed. These enemies appear in POIs (Points of Interest) across the Coastal Jungle starting zone. Prioritize clearing pirate camps and coastal fortifications early; the gunpowder drops from these enemies will carry you through your first several hours without needing any crafting.
+          </p>
+
+          <h3>Loot POI Chests</h3>
+          <p>
+            Chests found inside Ruins and other <strong>Windrose POIs</strong> (Points of Interest) reliably contain gunpowder alongside other consumables and gear. Make a habit of fully clearing each POI you visit — partial clears miss the best chest rewards. Windrose tracks POI completion separately, and a fully explored POI grants bonus XP in addition to its chest loot.
+          </p>
+
+          <h3>Smash Old Packages</h3>
+          <p>
+            Keep an eye out for <strong>Old Packages</strong> — large, square bundles that sparkle on the ground, often found near wrecked ships or abandoned pirate camps. Smashing an Old Package almost always yields a small stash of <strong>Windrose gunpowder</strong> or explosives. This is one of the easiest early sources and is frequently missed by new players.
+          </p>
+
+          <h2>Mid-Game: Crafting Windrose Gunpowder at the Millstones</h2>
+          <h3>Unlocking the Millstones</h3>
+          <p>
+            The <strong>Millstones</strong> workstation is your primary gunpowder crafting facility in Windrose. It becomes available once you reach the <strong>Foothills region</strong> — the second major biome after the Coastal Jungle. The Foothills is where iron ore first appears, and it&apos;s also where you&apos;ll source the most important gunpowder ingredient: Sulfur.
+          </p>
+
+          <h3>Windrose Gunpowder Recipe</h3>
+          <p>
+            The <strong>Windrose gunpowder crafting recipe</strong> requires two ingredients:
           </p>
           <ul>
-            <li><strong>Saltpeter (x3)</strong> — the primary ingredient for Windrose gunpowder. Found in Windrose cave deposits, purchased from Windrose port merchants, and produced at Windrose settlement saltpeter refineries.</li>
-            <li><strong>Charcoal (x2)</strong> — produced by burning wood at your Windrose settlement's charcoal kiln. Windrose charcoal can also be purchased from Windrose merchants at a premium.</li>
-            <li><strong>Sulfur (x1)</strong> — found near Windrose volcanic areas, purchased from Windrose alchemist NPCs, or looted from specific Windrose dungeon enemy types.</li>
+            <li><strong>Ash × 25</strong> — produced as a byproduct in your <strong>Charcoal Kiln</strong> whenever you burn wood to make charcoal. Run your Charcoal Kiln constantly from the start of the game and you&apos;ll naturally accumulate a large Ash stockpile by the time you reach the Foothills.</li>
+            <li><strong>Sulfur × 25</strong> — the harder ingredient. Sulfur must be <strong>mined with an Iron Pickaxe</strong>, and iron ore only appears in the Foothills region. You cannot mine Sulfur until you have iron tools, so unlock the Foothills as soon as possible if gunpowder supply is a bottleneck.</li>
           </ul>
           <p>
-            Combine these three Windrose gunpowder ingredients at a Windrose crafting bench or your settlement's Windrose Gunpowder Mill (produces larger batches more efficiently). Basic Windrose gunpowder works with all starter Windrose weapons and Tier 1–4 cannon ammunition.
+            Combine Ash and Sulfur at the <strong>Millstones workstation</strong> to produce <strong>Windrose gunpowder</strong>. The Millstones is a settlement building, so you need an established base in or near the Foothills to craft efficiently at scale.
           </p>
 
-          <h3>Advanced Windrose Gunpowder</h3>
+          <div className="info-box">
+            <strong>Windrose Gunpowder Pro Tip:</strong> Assign a <Link href="/windrose-crew">worker NPC</Link> to your Millstones. A stationed worker provides a <strong>+50% production bonus</strong> to gunpowder output — the single best return on a worker assignment in the game. Do not leave your Millstones unattended.
+          </div>
+
+          <h2>Farming Ash for Windrose Gunpowder</h2>
           <p>
-            <strong>Advanced Windrose gunpowder</strong> is required for higher-tier Windrose weapons and elite cannon ammunition. The advanced Windrose gunpowder recipe uses:
+            <strong>Ash</strong> is the easiest gunpowder ingredient to farm. Every time your Charcoal Kiln burns wood to produce Charcoal, it generates Ash as a byproduct. The key is to <strong>run your Charcoal Kiln continuously</strong> from the very start of the game — even before you need gunpowder — so that by the time you unlock Millstones you already have a large Ash reserve.
           </p>
-          <ul>
-            <li><strong>Refined Saltpeter (x3)</strong> — processed saltpeter from your Windrose Advanced Refinery building.</li>
-            <li><strong>Enriched Charcoal (x2)</strong> — charcoal mixed with Windrose volcanic minerals. Only available in volcanic biome areas.</li>
-            <li><strong>Crystalline Sulfur (x1)</strong> — rare, found only in Windrose Volcanic Archipelago and Ghost Waters biomes.</li>
-          </ul>
           <p>
-            Advanced Windrose gunpowder deals 40% more damage per shot with all compatible Windrose firearms and unlocks Tier 5–8 Windrose cannon ammunition types. The Windrose Gunpowder Bomber build specifically requires advanced Windrose gunpowder for its most powerful explosive abilities.
+            Wood is abundant throughout both the Coastal Jungle and Foothills zones, so Ash supply should never be a bottleneck if you maintain your kiln. If you find yourself short on Ash, cut more trees and queue up a large batch of Charcoal production.
           </p>
 
-          <h2>Windrose Gunpowder Farming</h2>
-          <h3>Where to Farm Saltpeter in Windrose</h3>
+          <h2>Farming Sulfur for Windrose Gunpowder</h2>
           <p>
-            <strong>Windrose saltpeter</strong> nodes appear as white crystalline deposits inside caves on Windrose islands. The highest concentration of Windrose saltpeter is found in the Frozen Waters biome, where glacial cave systems contain large saltpeter deposits. Establish a Windrose settlement near a saltpeter-rich island and build a Windrose Saltpeter Refinery to automate saltpeter production for your Windrose gunpowder supply.
-          </p>
-
-          <h3>Where to Farm Sulfur in Windrose</h3>
-          <p>
-            <strong>Windrose sulfur</strong> farming is more location-specific. Early-game Windrose sulfur sources include dungeon loot from Alchemist enemy types in Tier 1–4 Windrose dungeons. Mid-game Windrose players should prioritize exploring the Volcanic Archipelago on the Windrose map for abundant natural sulfur deposits. A Windrose Sulfur Collection building at a Volcanic Archipelago settlement produces sulfur automatically for your Windrose gunpowder operation.
-          </p>
-
-          <h2>Windrose Gunpowder Storage</h2>
-          <p>
-            <strong>Windrose gunpowder</strong> has special storage requirements — it cannot be stored near fire sources (your Windrose ship's galley, lanterns) without explosion risk. Always store Windrose gunpowder in dedicated Windrose Magazine compartments in your ship's hold. Upgrading your Windrose ship's magazine increases gunpowder storage capacity and reduces explosion risk from enemy fire damage to your hull.
+            <strong>Sulfur</strong> is the rate-limiting ingredient for <strong>Windrose gunpowder</strong> production. It only appears in the Foothills region as minable ore deposits, and you need an <strong>Iron Pickaxe</strong> to harvest it. Since iron itself is exclusive to the Foothills, Sulfur is completely unavailable until you advance past the Coastal Jungle starting zone.
           </p>
           <p>
-            On your Windrose settlement, build a separate Windrose Powder House structure for bulk gunpowder storage. The Windrose Powder House is a fireproof structure with large capacity — far safer than storing Windrose gunpowder in general settlement warehouses.
+            Once in the Foothills, identify Sulfur nodes on your map — they appear as yellowish mineral deposits, distinct from iron ore. Prioritize building a Foothills settlement near a sulfur-dense area so you can mine it in bulk. If you find a Foothills POI with both iron and sulfur nodes nearby, it&apos;s an ideal location for your second base.
           </p>
 
           <h2>Windrose Gunpowder and Cannon Ammunition</h2>
-          <h3>Windrose Cannon Round Shot</h3>
+          <h3>Standard Cannon Rounds</h3>
           <p>
-            The standard <strong>Windrose cannon</strong> ammunition uses basic Windrose gunpowder + iron balls. Round shot Windrose cannon ammunition deals direct hull damage to enemy Windrose ships and is the most efficient in terms of Windrose gunpowder consumption per shot.
+            Your <strong>Windrose ship&apos;s</strong> standard broadside cannons consume gunpowder with every salvo. Round shot is the default Windrose cannon ammo — direct hull damage against enemy ships. Maintain at least twice your expected session consumption in your ship&apos;s magazine to avoid running dry mid-combat.
           </p>
 
-          <h3>Windrose Chain Shot</h3>
+          <h3>Chain Shot</h3>
           <p>
-            <strong>Windrose chain shot</strong> targets enemy ship rigging and sails, reducing their Windrose ship's speed and maneuverability. Chain shot uses slightly more Windrose gunpowder per round but is essential for setting up boarding actions in Windrose naval combat.
+            <strong>Chain Shot</strong> consumes slightly more <strong>Windrose gunpowder</strong> per round but is essential for disabling enemy sails before a boarding action. The tradeoff — using more gunpowder now to set up a boarding fight — is usually worth it when you want to capture cargo rather than sink the target.
           </p>
 
-          <h3>Windrose Explosive Shell</h3>
+          <h3>Firearms</h3>
           <p>
-            The most powerful <strong>Windrose cannon</strong> ammunition — explosive shells — requires advanced Windrose gunpowder. A single Windrose explosive shell salvo can ignite enemy ship fires and deal massive AoE damage. Reserve Windrose explosive shells for elite enemy Windrose ships and boss naval encounters.
+            All <strong>Windrose</strong> ranged weapons — pistols, muskets, blunderbusses, hand cannons — draw from the same gunpowder supply as your ship&apos;s cannons. During long dungeon runs, firearm-heavy <Link href="/windrose-builds">builds</Link> can deplete your gunpowder reserves surprisingly fast. Carry a dedicated gunpowder reserve for ground combat, separate from your ship&apos;s naval magazine.
           </p>
 
-          <h2>Windrose Gunpowder Tips</h2>
-          <p>
-            Top <strong>Windrose gunpowder</strong> management tips from experienced Windrose players:
-          </p>
+          <h2>Windrose Gunpowder Management Tips</h2>
           <ul>
-            <li>Always carry at least 2x your expected Windrose session gunpowder needs — Windrose dungeons can consume far more gunpowder than planned.</li>
-            <li>Assign a <Link href="/windrose-crew">Windrose Supply Crew</Link> member to monitor and distribute Windrose gunpowder during long voyages.</li>
-            <li>Sell excess Windrose gunpowder at ports for gold — Windrose merchants pay premium prices for bulk gunpowder orders.</li>
-            <li>The <Link href="/windrose-mods">Windrose Auto-Resupply mod</Link> can automate gunpowder restocking when you dock at Windrose ports.</li>
+            <li><strong>Farm Charcoal Kiln from day one</strong> — Ash stockpiles are invisible until you need them. A well-fed kiln means you&apos;ll never be gated by Ash when you reach Millstones.</li>
+            <li><strong>Reach the Foothills early</strong> — Sulfur is your actual bottleneck. Push into Foothills as soon as your gear allows rather than grinding the Coastal Jungle past the point of diminishing returns.</li>
+            <li><strong>Assign a worker to Millstones</strong> — the +50% production bonus is free passive output that compounds significantly over a full session.</li>
+            <li><strong>Stock gunpowder before long sessions</strong> — estimate your firearm and cannon consumption for the session and carry at least double. Windrose POIs can consume far more ammo than planned.</li>
+            <li><strong>Don&apos;t buy gunpowder from merchants</strong> once your Millstones is running — merchant gunpowder is expensive and exists mainly as an emergency bridge before your own production is online.</li>
           </ul>
 
-          <div className="info-box">
-            <strong>Windrose Gunpowder Economy Tip:</strong> Early in Windrose, buy Windrose gunpowder from port merchants rather than crafting it — it&apos;s more efficient until you have a functioning settlement refinery. Once your Windrose settlement gunpowder production is established, it&apos;s far cheaper to craft your own Windrose gunpowder.
-          </div>
+          <h2>Windrose Gunpowder FAQ</h2>
+          <h3>Can I get gunpowder without crafting?</h3>
+          <p>
+            Yes. In early Windrose gameplay, looting from enemies (Sailors, Musketeers), smashing Old Packages, and opening POI chests is the primary source of <strong>Windrose gunpowder</strong>. Crafting at Millstones only becomes available after reaching the Foothills region.
+          </p>
+
+          <h3>What is the Windrose gunpowder crafting recipe?</h3>
+          <p>
+            The recipe is <strong>Ash × 25 + Sulfur × 25</strong> at the Millstones workstation. Ash comes from your Charcoal Kiln as a byproduct of charcoal production. Sulfur is mined with an Iron Pickaxe in the Foothills biome.
+          </p>
+
+          <h3>How do I increase gunpowder production speed?</h3>
+          <p>
+            Assign a <Link href="/windrose-crew">worker NPC</Link> to your Millstones — this gives a permanent +50% gunpowder production bonus. Additionally, building multiple Millstones workstations lets you run parallel production batches.
+          </p>
 
         </article>
         <RelatedPages pages={related} />

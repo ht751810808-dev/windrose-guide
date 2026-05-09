@@ -7,16 +7,16 @@ import CommentBox from '@/components/CommentBox';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Windrose Ships – All Ship Types, Stats & Upgrades Guide 2026',
-  description: 'Complete Windrose ships guide covering all ship types from sloops to galleons. Ship stats, upgrade paths, best Windrose ship for each build, and naval combat tips.',
-  keywords: ['windrose ships', 'windrose ship', 'windrose', 'windrose naval', 'windrose ship guide', 'windrose game'],
+  title: 'Windrose Ships Guide – Ketch, Brigantine & Frigate Stats 2026',
+  description: 'Complete Windrose ships guide: all three ship classes (Ketch, Brigantine, Frigate), Stock/Brethren/Blackbeard variants, cannon loadouts, ship parts, and best ship for each playstyle.',
+  keywords: ['windrose ships', 'windrose ship', 'windrose', 'windrose frigate', 'windrose ketch', 'windrose brigantine', 'windrose ship guide'],
   alternates: { canonical: 'https://www.windroseguide.com/windrose-ships' },
 };
 
 const related = [
-  { href: '/windrose-crew', label: 'Windrose Crew', desc: 'NPC crew for your ship' },
+  { href: '/windrose-crew', label: 'Windrose Crew', desc: 'Recruit and manage your crew' },
   { href: '/windrose-builds', label: 'Windrose Builds', desc: 'Best builds for ship combat' },
-  { href: '/windrose-weapons', label: 'Windrose Weapons', desc: 'Naval weapons & cannons' },
+  { href: '/windrose-weapons', label: 'Windrose Weapons', desc: 'Naval weapons & boarding arms' },
   { href: '/windrose-map', label: 'Windrose Map', desc: 'Navigation & sea routes' },
   { href: '/windrose-gunpowder', label: 'Windrose Gunpowder', desc: 'Cannon ammo crafting' },
   { href: '/windrose-gameplay', label: 'Windrose Gameplay', desc: 'Ship combat basics' },
@@ -35,105 +35,102 @@ export default function WindroseShipsPage() {
             <div className="pill pill-ocean" style={{ marginBottom: '1rem' }}>Naval Guide</div>
             <h1 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 900, marginBottom: '1rem', lineHeight: 1.1 }}>Windrose Ships</h1>
             <p style={{ color: 'var(--color-text-muted)', fontSize: '1.05rem', lineHeight: 1.8, maxWidth: '680px' }}>
-              Complete guide to all <strong style={{ color: 'var(--color-text)' }}>Windrose ships</strong> — types, stats, upgrade paths, and which Windrose ship is best for your build and playstyle.
+              Complete guide to all <strong style={{ color: 'var(--color-text)' }}>Windrose ships</strong> — all three ship classes, their Stock, Brethren, and Blackbeard variants, cannon loadouts, ship parts, and which Windrose ship is best for your build and crew size.
             </p>
           </div>
         </section>
         <article className="container article-content" style={{ padding: '3rem 1.5rem', maxWidth: '860px' }}>
+
           <h2>Windrose Ships Overview</h2>
           <p>
-            Your <strong>Windrose ship</strong> is the centerpiece of the Windrose experience. In Windrose, your ship serves as your mobile base, combat platform, and exploration vehicle. Choosing the right Windrose ship for your playstyle — and upgrading it effectively — is one of the most important decisions in the Windrose game.
+            Your <strong>Windrose ship</strong> is the foundation of the entire Windrose experience — your mobile base, combat platform, and primary means of exploration. Windrose currently features three ship classes: the <strong>Ketch</strong>, the <strong>Brigantine</strong>, and the <strong>Frigate</strong>. Each class exists in three hull variants — <strong>Stock</strong>, <strong>Brethren</strong>, and <strong>Blackbeard</strong> — that differ in cannon weight compatibility, hull HP, and hold capacity rather than being cosmetic skins.
           </p>
           <p>
-            <strong>Windrose</strong> features multiple ship classes, each with different stat profiles for speed, hull health, cargo capacity, cannon count, and crew size. As you progress in Windrose, you can upgrade your current Windrose ship or purchase an entirely new vessel from Windrose port settlements.
+            Choosing the right <strong>Windrose ship</strong> and variant for your crew size and <Link href="/windrose-builds">Windrose build</Link> is one of the most strategic decisions in the game. Upgrading your ship is gated behind the <strong>"I Need a Bigger Boat"</strong> quest, which unlocks the Shipwright's Workshop and lets you build a Wharf to prepare for the open seas.
           </p>
 
-          <h2>All Windrose Ship Types</h2>
-          <h3>Windrose Sloop</h3>
+          <h2>Windrose Ship Classes</h2>
+
+          <h3>Windrose Ketch</h3>
           <p>
-            The <strong>Windrose Sloop</strong> is the entry-level ship in Windrose. Fast and maneuverable, the Windrose Sloop excels at quick raids and hit-and-run Windrose tactics. With only 2–4 cannon ports and limited cargo, the Windrose Sloop is ideal for solo Windrose players or small two-person crews. The Windrose Sloop is the easiest Windrose ship to crew and repair.
+            The <strong>Windrose Ketch</strong> is the starter ship — small, nimble, and easy to crew alone or with a single partner. Ketches are best for the early Coastal Jungle zone, quick looting runs, and solo players who want responsive handling over raw firepower. The Ketch mounts lighter cannons than the Brigantine or Frigate, making it less suited for prolonged naval engagements against larger enemy vessels.
           </p>
           <ul>
-            <li>Windrose Sloop Speed: ★★★★★ (fastest Windrose ship)</li>
-            <li>Windrose Sloop Hull HP: ★★☆☆☆</li>
-            <li>Windrose Sloop Cannons: 2–4</li>
-            <li>Windrose Sloop Crew Requirement: 1–2 players</li>
+            <li><strong>Ketch Stock:</strong> Baseline variant — balanced hull HP and standard cannon slots.</li>
+            <li><strong>Ketch Brethren:</strong> Slightly larger hold, minor crew buff for faction-aligned players.</li>
+            <li><strong>Ketch Blackbeard:</strong> The only Ketch variant that can mount 24-pound cannons — a significant firepower upgrade for the class.</li>
           </ul>
 
           <h3>Windrose Brigantine</h3>
           <p>
-            The <strong>Windrose Brigantine</strong> is the most versatile Windrose ship class, balancing speed, firepower, and cargo capacity. The Windrose Brigantine is the recommended Windrose ship for standard co-op groups of 3–4 players. With 6–8 cannon ports and a larger cargo hold than the Windrose Sloop, the Windrose Brigantine can handle most Windrose content efficiently.
+            The <strong>Windrose Brigantine</strong> is the all-rounder — the most popular Windrose ship for standard co-op groups of 2–4 players. It offers a strong balance of speed, hull durability, cannon count, and cargo space. The Brigantine is versatile enough to handle both naval combat and longer exploration voyages without needing constant resupply.
           </p>
           <ul>
-            <li>Windrose Brigantine Speed: ★★★★☆</li>
-            <li>Windrose Brigantine Hull HP: ★★★☆☆</li>
-            <li>Windrose Brigantine Cannons: 6–8</li>
-            <li>Windrose Brigantine Crew Requirement: 2–4 players</li>
+            <li><strong>Brigantine Stock:</strong> The default mid-tier option. Solid across all categories.</li>
+            <li><strong>Brigantine Brethren:</strong> Improved cargo capacity — ideal for players who prioritize looting and trading runs.</li>
+            <li><strong>Brigantine Blackbeard:</strong> The only Brigantine variant that can mount 24-pound cannons, giving it punch well above its size class.</li>
           </ul>
 
           <h3>Windrose Frigate</h3>
           <p>
-            The <strong>Windrose Frigate</strong> is the mid-to-high tier Windrose warship, optimized for Windrose naval combat. Frigates in Windrose carry 10–14 cannons and have significantly reinforced hulls compared to smaller Windrose ships. The Windrose Frigate is the preferred Windrose ship for the Ship Captain build and teams that focus on naval engagements.
+            The <strong>Windrose Frigate</strong> (also called the Fregata) is the pinnacle of naval engineering in Windrose — a massive leap in firepower and hull durability compared to the Ketch and Brigantine. The Frigate is the endgame ship, requiring a larger crew to operate effectively and offering the most tactical flexibility in naval combat. Community guides consistently rank the Windrose Frigate as the best ship for late-game content and boss encounters.
           </p>
           <ul>
-            <li>Windrose Frigate Speed: ★★★☆☆</li>
-            <li>Windrose Frigate Hull HP: ★★★★☆</li>
-            <li>Windrose Frigate Cannons: 10–14</li>
-            <li>Windrose Frigate Crew Requirement: 4–6 players</li>
-          </ul>
-
-          <h3>Windrose Man-o'-War (Galleon)</h3>
-          <p>
-            The <strong>Windrose Man-o'-War</strong>, also called the Windrose Galleon, is the most powerful Windrose ship available in Early Access. This massive Windrose vessel carries 16–24 cannons, has the highest hull HP of any Windrose ship, and can haul the most cargo. The Windrose Man-o'-War requires a full crew of 6–8 players to operate effectively and is the ultimate Windrose ship for fleet battles and high-tier dungeon assault runs.
-          </p>
-          <ul>
-            <li>Windrose Man-o'-War Speed: ★★☆☆☆</li>
-            <li>Windrose Man-o'-War Hull HP: ★★★★★</li>
-            <li>Windrose Man-o'-War Cannons: 16–24</li>
-            <li>Windrose Man-o'-War Crew Requirement: 6–8 players</li>
-          </ul>
-
-          <h2>Windrose Ship Upgrades</h2>
-          <h3>Hull Upgrades</h3>
-          <p>
-            <strong>Windrose ship</strong> hull upgrades increase your vessel's durability in naval combat. Hull Windrose upgrades include reinforced planking (increases max HP), waterproofing (reduces fire damage), and armored bow (reduces ram damage). Hull upgrades in Windrose are crafted at your Windrose settlement shipyard using timber, iron, and rare materials from Windrose dungeons.
-          </p>
-
-          <h3>Cannon Upgrades</h3>
-          <p>
-            <strong>Windrose</strong> cannon upgrades improve your ship's offensive capabilities. Windrose cannon upgrade options include long-range barrels (+range), rapid-fire mechanisms (+reload speed), and heavy shot (+damage per salvo). <Link href="/windrose-gunpowder">Windrose gunpowder</Link> quality also affects cannon damage — higher-tier Windrose gunpowder deals more damage per shot.
-          </p>
-
-          <h3>Sail Upgrades</h3>
-          <p>
-            Sail upgrades in <strong>Windrose</strong> improve your ship's speed, maneuverability, and wind efficiency. Windrose sail upgrades include silk sails (+speed in high wind), storm-rigged sails (+control in rough weather), and military-cut sails (+battle turn speed). Fast Windrose ships with upgraded sails can outmaneuver heavier Windrose enemy vessels.
-          </p>
-
-          <h2>Windrose Ship Combat Guide</h2>
-          <h3>Windrose Naval Positioning</h3>
-          <p>
-            In <strong>Windrose</strong> naval combat, positioning is everything. Your Windrose ship's cannons fire from the sides (broadsides), so keeping your vessel's side angled toward the enemy Windrose ship maximizes your fire output. Simultaneously, angling your Windrose ship's bow toward incoming cannon fire reduces the cross-section exposed to enemy Windrose volleys.
-          </p>
-
-          <h3>Windrose Boarding Tactics</h3>
-          <p>
-            The <strong>Windrose boarding</strong> system lets you close with an enemy Windrose ship and fight on its decks. To board in Windrose, bring your ship alongside the enemy vessel, throw grappling hooks to lash the ships together, then send your <Link href="/windrose-crew">Windrose crew</Link> or co-op teammates across. Windrose boarding fights are won by players with well-developed <Link href="/windrose-builds">Windrose boarding builds</Link>.
-          </p>
-
-          <h2>Best Windrose Ship for Each Playstyle</h2>
-          <p>
-            Choosing the best <strong>Windrose ship</strong> depends on your Windrose build and crew size:
-          </p>
-          <ul>
-            <li><strong>Solo Windrose players:</strong> Windrose Sloop (easy to manage alone)</li>
-            <li><strong>Windrose Gunpowder Bomber build:</strong> Windrose Brigantine (good cargo for gunpowder storage)</li>
-            <li><strong>Windrose Boarding Specialist build:</strong> Windrose Brigantine (fast enough to intercept enemy Windrose ships)</li>
-            <li><strong>Windrose Ship Captain build:</strong> Windrose Frigate or Man-o'-War (maximum firepower)</li>
-            <li><strong>Full 8-player Windrose crew:</strong> Windrose Man-o'-War (needs all 8 crew positions)</li>
+            <li><strong>Frigate Stock:</strong> Excellent base stats — the go-to for most late-game crews.</li>
+            <li><strong>Frigate Brethren:</strong> Enhanced hold capacity and faction perks for Brethren-aligned players.</li>
+            <li><strong>Frigate Blackbeard:</strong> The <em>only hull in the entire game</em> that can mount 36-pound cannons — the heaviest broadside available in Windrose, reserved for the most serious naval combat players.</li>
           </ul>
 
           <div className="info-box">
-            <strong>Windrose Ships Pro Tip:</strong> Don&apos;t sell your old Windrose ship when you upgrade. Keep your Windrose Sloop as a fast scout vessel while using your main Windrose Frigate or Man-o'-War for heavy combat.
+            <strong>Cannon Caliber Note:</strong> Cannon weight compatibility matters enormously in Windrose. Only Blackbeard variants of each ship class can mount heavier cannon calibers — the Blackbeard Frigate&apos;s 36-pound cannons deal significantly more hull damage per salvo than any other loadout in the game.
+          </div>
+
+          <h2>Windrose Ship Parts System</h2>
+          <p>
+            <strong>Windrose ship parts</strong> are the modular components that define your vessel&apos;s combat, durability, and cargo profile. Each hull mounts a fixed loadout of cannons, hull modifications, rigging, and crew orders — all swappable at the Dockyard as you progress. Ship Parts in Windrose fall into four categories:
+          </p>
+          <ul>
+            <li><strong>Cannons:</strong> Your primary offensive firepower. Caliber determines damage; the heavier the cannon, the more damage but the slower the reload.</li>
+            <li><strong>Hull Modifications:</strong> Reinforced planking, waterproofing, and armored bow options that raise HP, reduce fire damage, or absorb ram impacts.</li>
+            <li><strong>Rigging:</strong> Sail configurations that affect speed, maneuverability, and wind behavior in rough sea conditions.</li>
+            <li><strong>Crew Orders:</strong> Unlockable through faction reputation and POI loot. The universal <strong>Crew Power</strong> order is available on all hulls; named crew orders with stronger effects are earned through progression.</li>
+          </ul>
+
+          <h2>Windrose Naval Combat Guide</h2>
+          <h3>Broadside Combat</h3>
+          <p>
+            <strong>Windrose</strong> naval combat is inspired by Assassin's Creed: Black Flag — you circle opponents and deliver broadsides, choosing which gun to fire based on the direction you&apos;re facing. Glowing white aiming arrows indicate optimal firing angles. Keeping your ship&apos;s side angled toward the enemy maximizes your cannon output while minimizing your exposed profile.
+          </p>
+
+          <h3>Chain Shot & Sail Targeting</h3>
+          <p>
+            <strong>Chain Shot</strong> is a secondary ammunition type used primarily to destroy enemy sails and rigging. Hitting an enemy Windrose ship&apos;s sails with Chain Shot dramatically reduces their speed and maneuverability, making them easy to circle and board. Reserve Chain Shot for when you want to force a boarding action rather than sink the target.
+          </p>
+
+          <h3>Boarding</h3>
+          <p>
+            To board an enemy <strong>Windrose ship</strong>, close the distance, throw grappling hooks to lash the ships together, then fight across the decks in melee range. Boarding combat rewards players with good <Link href="/windrose-builds">Windrose builds</Link> optimized for close quarters. After winning a boarding action, you can claim the enemy ship&apos;s cargo or scuttle the vessel.
+          </p>
+
+          <h2>How to Unlock New Windrose Ships</h2>
+          <p>
+            Progression to larger <strong>Windrose ships</strong> is quest-gated. After your starting Ketch, complete the <strong>"I Need a Bigger Boat"</strong> quest to upgrade your Weaponsmith Workshop to a Shipwright's Workshop. From there, build a Wharf at your settlement to begin constructing or purchasing Brigantines and eventually Frigates. Ship availability scales with your faction reputation and settlement tier.
+          </p>
+          <p>
+            You must also complete <strong>"Rescue the Crew"</strong> and recruit 7 crewmates before you can fully operate your first proper warship. <Link href="/windrose-crew">Crew management</Link> is directly tied to ship capability — an undermanned Windrose ship performs far below its potential in combat.
+          </p>
+
+          <h2>Best Windrose Ship for Each Playstyle</h2>
+          <ul>
+            <li><strong>Solo Windrose players:</strong> Ketch Blackbeard — maximum firepower for a one-person crew.</li>
+            <li><strong>Small co-op (2–3 players):</strong> Brigantine Blackbeard — 24-pound cannons with manageable crew requirements.</li>
+            <li><strong>Standard co-op (4 players):</strong> Brigantine Brethren or Frigate Stock — the sweet spot for most player groups.</li>
+            <li><strong>Max firepower focus:</strong> Frigate Blackbeard — 36-pound cannons, the heaviest broadside in Windrose, for dedicated naval combat players.</li>
+            <li><strong>Trading & exploration:</strong> Brigantine Brethren or Frigate Brethren — maximized cargo hold for hauling loot and faction goods.</li>
+          </ul>
+
+          <div className="info-box">
+            <strong>Windrose Ships Pro Tip:</strong> Don&apos;t discard your Ketch when you upgrade to a Brigantine — keep it docked as a fast scout vessel. The Ketch Blackbeard in particular remains useful for rapid solo runs to Foothills resource nodes even after you&apos;ve transitioned to a Frigate as your main combat ship.
           </div>
 
         </article>
